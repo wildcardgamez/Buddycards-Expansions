@@ -1,0 +1,7 @@
+{
+  "parent": "buddycards:block/acacia_card_display",
+  "textures": {
+    "0": "buddycardsexp:block/soulwood_card_display",
+    "particle": "buddycardsexp:block/soulwood_card_display"
+  }
+}

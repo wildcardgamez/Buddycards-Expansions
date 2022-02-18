@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aquaculture"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_aquaculture"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_aquaculture"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_aquaculture"
+    }
+  ],
+  "result":
+  {
+    "item": "buddycardsexp:buddycard_binder_aquaculture",
+    "count": 1
+  }
+}

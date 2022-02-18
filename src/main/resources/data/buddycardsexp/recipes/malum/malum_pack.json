@@ -1,0 +1,23 @@
+{
+  "type": "malum:spirit_infusion",
+  "input": {
+    "item": "buddycardsexp:shredded_buddycard",
+    "count": 6
+  },
+  "output": {
+    "item": "buddycardsexp:buddycard_pack_malum",
+    "count": 1
+  },
+  "extra_items": [
+    {
+      "item": "minecraft:paper",
+      "count": 6
+    }
+  ],
+  "spirits": [
+    {
+      "item": "buddycardsexp:childish_spirit",
+      "count": 4
+    }
+  ]
+}

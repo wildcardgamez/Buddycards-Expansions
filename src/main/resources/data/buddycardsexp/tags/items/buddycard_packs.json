@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "buddycardsexp:buddycard_pack_create",
+      "required": false
+    },
+    {
+      "id": "buddycardsexp:buddycard_pack_aquaculture",
+      "required": false
+    },
+    {
+      "id": "buddycardsexp:buddycard_pack_farmers",
+      "required": false
+    },
+    {
+      "id": "buddycardsexp:buddycard_pack_malum",
+      "required": false
+    }
+  ]
+}

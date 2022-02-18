@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "buddycardsexp:buddycard_pack_create"
+    }
+  },
+  "result": {
+    "item": "buddycardsexp:buddycard_booster_box_create"
+  }
+}

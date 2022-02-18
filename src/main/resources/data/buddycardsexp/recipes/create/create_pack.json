@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:copper_sheet"
+  },
+  "transitionalItem": {
+    "item": "buddycardsexp:unfinished_buddycard_pack"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "buddycardsexp:unfinished_buddycard_pack"
+        },
+        {
+          "item": "buddycardsexp:recycled_buddycard"
+        }
+      ],
+      "results": [
+        {
+          "item": "buddycardsexp:unfinished_buddycard_pack"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "buddycardsexp:unfinished_buddycard_pack"
+        },
+        {
+          "fluid": "minecraft:water",
+          "nbt": {},
+          "amount": 125
+        }
+      ],
+      "results": [
+        {
+          "item": "buddycardsexp:unfinished_buddycard_pack"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "buddycardsexp:buddycard_pack_create"
+    }
+  ],
+  "loops": 4
+}

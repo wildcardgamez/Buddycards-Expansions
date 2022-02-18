@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aquaculture"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "buddycardsexp:buddycard_booster_box_aquaculture"
+    }
+  ],
+  "result":
+  {
+    "item": "buddycardsexp:buddycard_pack_aquaculture",
+    "count": 6
+  }
+}

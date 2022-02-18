@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aquaculture"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "buddycardsexp:buddycard_pack_aquaculture"
+    }
+  },
+  "result": {
+    "item": "buddycardsexp:buddycard_booster_box_aquaculture"
+  }
+}

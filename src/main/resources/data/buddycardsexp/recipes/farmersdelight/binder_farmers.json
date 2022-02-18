@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_malum"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_malum"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_malum"
+    }
+  ],
+  "result":
+  {
+    "item": "buddycardsexp:buddycard_binder_malum",
+    "count": 1
+  }
+}

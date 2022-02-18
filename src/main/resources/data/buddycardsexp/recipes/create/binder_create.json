@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_create"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_create"
+    },
+    {
+      "tag": "buddycardsexp:buddycards_create"
+    }
+  ],
+  "result":
+  {
+    "item": "buddycardsexp:buddycard_binder_create",
+    "count": 1
+  }
+}

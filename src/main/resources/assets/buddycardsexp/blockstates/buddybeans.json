@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "buddycardsexp:block/buddybeans_stage0"
+    },
+    "age=1": {
+      "model": "buddycardsexp:block/buddybeans_stage0"
+    },
+    "age=2": {
+      "model": "buddycardsexp:block/buddybeans_stage1"
+    },
+    "age=3": {
+      "model": "buddycardsexp:block/buddybeans_stage1"
+    },
+    "age=4": {
+      "model": "buddycardsexp:block/buddybeans_stage2"
+    },
+    "age=5": {
+      "model": "buddycardsexp:block/buddybeans_stage2"
+    },
+    "age=6": {
+      "model": "buddycardsexp:block/buddybeans_stage2"
+    },
+    "age=7": {
+      "model": "buddycardsexp:block/buddybeans_stage3"
+    }
+  }
+}

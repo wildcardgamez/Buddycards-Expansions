@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "buddycardsexp:buddycard_booster_box_malum"
+    }
+  ],
+  "result":
+  {
+    "item": "buddycardsexp:buddycard_pack_malum",
+    "count": 6
+  }
+}

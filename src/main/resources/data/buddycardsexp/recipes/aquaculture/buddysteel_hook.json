@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "aquaculture"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XOX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "buddycards:buddysteel_nugget"
+    },
+    "O": {
+      "item": "aquaculture:iron_hook"
+    }
+  },
+  "result": {
+    "item": "buddycardsexp:buddysteel_hook"
+  }
+}

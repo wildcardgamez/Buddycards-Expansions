@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "buddycardsexp:shredded_buddycard"
+    },
+    {
+      "item": "buddycardsexp:shredded_buddycard"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 125
+    }
+  ],
+  "results": [
+    {
+      "item": "buddycardsexp:recycled_buddycard"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "replace": "false",
+  "values": [
+    {
+      "id": "buddycardsexp:childish_ring",
+      "required": false
+    },
+    {
+      "id": "buddycardsexp:ring_of_youthful_spoil",
+      "required": false
+    }
+  ]
+}

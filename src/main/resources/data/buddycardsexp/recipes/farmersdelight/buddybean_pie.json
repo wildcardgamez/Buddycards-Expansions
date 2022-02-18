@@ -1,0 +1,31 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "aaa",
+    "xOx"
+  ],
+  "key": {
+    "#": {
+      "item": "buddycardsexp:buddygummies"
+    },
+    "a": {
+      "item": "buddycardsexp:buddybean_paste"
+    },
+    "x": {
+      "item": "minecraft:sugar"
+    },
+    "O": {
+      "item": "farmersdelight:pie_crust"
+    }
+  },
+  "result": {
+    "item": "buddycardsexp:buddybean_pie"
+  }
+}

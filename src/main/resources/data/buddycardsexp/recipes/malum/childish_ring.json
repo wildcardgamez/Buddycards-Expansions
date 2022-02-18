@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X#",
+    "X X",
+    " X "
+  ],
+  "key": {
+    "#": {
+      "item": "buddycards:buddysteel_ingot"
+    },
+    "X": {
+      "tag": "forge:leather"
+    }
+  },
+  "result": {
+    "item": "buddycardsexp:childish_ring"
+  }
+}

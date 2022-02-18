@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "buddycardsexp:buddycard_booster_box_create"
+    }
+  ],
+  "result":
+  {
+    "item": "buddycardsexp:buddycard_pack_create",
+    "count": 6
+  }
+}

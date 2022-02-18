@@ -1,0 +1,21 @@
+{
+  "replace": "false",
+  "values": [
+    {
+      "id": "buddycardsexp:buddysteel_medal_create",
+      "required": false
+    },
+    {
+      "id": "buddycardsexp:buddysteel_medal_aquaculture",
+      "required": false
+    },
+    {
+      "id": "buddycardsexp:buddysteel_medal_farmers",
+      "required": false
+    },
+    {
+      "id": "buddycardsexp:buddysteel_medal_malum",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "buddycardsexp:buddycard_booster_box_farmers"
+    }
+  ],
+  "result":
+  {
+    "item": "buddycardsexp:buddycard_pack_farmers",
+    "count": 6
+  }
+}

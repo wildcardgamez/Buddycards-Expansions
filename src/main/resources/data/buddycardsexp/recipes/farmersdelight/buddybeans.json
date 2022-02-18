@@ -1,0 +1,27 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "buddycards:buddysteel_nugget"
+    },
+    {
+      "item": "buddycards:buddysteel_nugget"
+    },
+    {
+      "item": "buddycards:buddysteel_nugget"
+    }
+  ],
+  "result": {
+    "item": "buddycardsexp:buddybeans",
+    "count": 1
+  }
+}

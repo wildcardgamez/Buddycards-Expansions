@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north,spirit_type=0": {
+      "model": "buddycardsexp:block/corrupted_childish_totem_pole"
+    },
+    "facing=south,spirit_type=0": {
+      "model": "buddycardsexp:block/corrupted_childish_totem_pole",
+      "y": 180
+    },
+    "facing=west,spirit_type=0": {
+      "model": "buddycardsexp:block/corrupted_childish_totem_pole",
+      "y": 270
+    },
+    "facing=east,spirit_type=0": {
+      "model": "buddycardsexp:block/corrupted_childish_totem_pole",
+      "y": 90
+    }
+  }
+}

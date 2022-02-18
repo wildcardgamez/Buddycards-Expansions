@@ -1,0 +1,7 @@
+{
+  "parent": "buddycards:item/buddycard",
+  "textures": {
+    "layer0": "buddycardsexp:item/aquaculture_set/15",
+    "layer1": "buddycards:item/grade5"
+  }
+}
