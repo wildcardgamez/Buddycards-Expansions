@@ -11,6 +11,7 @@ import com.sammy.malum.core.systems.rites.MalumRiteType;
 import com.sammy.malum.core.systems.spirit.MalumSpiritType;
 import com.wildcard.buddycards.Buddycards;
 import com.wildcard.buddycards.block.BuddycardBoosterBoxBlock;
+import com.wildcard.buddycards.block.CardDisplayBlock;
 import com.wildcard.buddycards.item.*;
 import com.wildcard.buddycards.registries.BuddycardsBlocks;
 import com.wildcard.buddycards.registries.BuddycardsItems;
@@ -20,7 +21,9 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.awt.*;
@@ -32,6 +35,12 @@ public class MalumIntegration {
         BINDER = RegistryHandler.ITEMS.register("buddycard_binder_malum", () -> new BuddycardBinderItem(RegistryHandler.MALUM_REQUIREMENT, BuddycardsItems.DEFAULT_BINDER_PROPERTIES));
         MEDAL = RegistryHandler.ITEMS.register("buddysteel_medal_malum", () -> new BuddysteelSetMedalItem(RegistryHandler.MALUM_REQUIREMENT, ExtendedMedalTypes.MALUM_SET, RegistryHandler.MALUM_SET, BuddycardsItems.DEFAULT_MEDAL_PROPERTIES));
         BOOSTER_BOX_ITEM = RegistryHandler.ITEMS.register("buddycard_booster_box_malum", () -> new BuddycardBoosterBoxItem(BOOSTER_BOX.get(), PACK, BuddycardsItems.DEFAULT_UNCOMMON_PROPERTIES));
+
+        RUNEWOOD_DISPLAY = RegistryHandler.BLOCKS.register("runewood_card_display", () -> new CardDisplayBlock(BlockRegistry.RUNEWOOD_PROPERTIES()));
+        SOULWOOD_DISPLAY = RegistryHandler.BLOCKS.register("soulwood_card_display", () -> new CardDisplayBlock(BlockRegistry.SOULWOOD_PROPERTIES()));
+
+        BuddycardsBlocks.DISPLAY_BLOCKS.add(RUNEWOOD_DISPLAY);
+        BuddycardsBlocks.DISPLAY_BLOCKS.add(SOULWOOD_DISPLAY);
 
         SPIRIT_ITEM = RegistryHandler.ITEMS.register("childish_spirit", () -> new MalumSpiritItem(new Item.Properties().tab(MalumSplinterTab.INSTANCE), SPIRIT));
         SPIRIT = new ChildishSpiritType();
@@ -56,7 +65,10 @@ public class MalumIntegration {
     public static RegistryObject<BuddysteelSetMedalItem> MEDAL;
     public static RegistryObject<BuddycardBoosterBoxBlock> BOOSTER_BOX;
     public static RegistryObject<BuddycardBoosterBoxItem> BOOSTER_BOX_ITEM;
-    
+
+    public static RegistryObject<CardDisplayBlock> RUNEWOOD_DISPLAY;
+    public static RegistryObject<CardDisplayBlock> SOULWOOD_DISPLAY;
+
     public static final Color SPIRIT_COLOR = new Color(152, 232, 255);
     public static MalumSpiritType SPIRIT;
     public static RegistryObject<Item> SPIRIT_ITEM;

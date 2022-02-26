@@ -41,16 +41,20 @@ public class MalumEvents {
     @OnlyIn(Dist.CLIENT)
     public void setupCodex(ProgressionBookScreen.SetupMalumCodexEntriesEvent event) {
         ProgressionBookScreen.entries.add((new BookEntry("childish_ring", MalumIntegration.CHILDISH_RING.get(), -5, 2))
+                .setObjectSupplier(BuddycardsEntryObject::new)
                 .addPage(new HeadlineTextPage("childish_ring", "childish_ring"))
                 .addPage(CraftingBookPage.ringPage(MalumIntegration.CHILDISH_RING.get(), Items.LEATHER, BuddycardsItems.BUDDYSTEEL_INGOT.get()))
                 .addPage(SpiritInfusionPage.fromOutput(MalumIntegration.YOUTHFUL_RING.get())));
         ProgressionBookScreen.entries.add((new BookEntry("childish_spirit", MalumIntegration.SPIRIT_ITEM.get(), -4, 1))
+                .setObjectSupplier(BuddycardsEntryObject::new)
                 .addPage(new SpiritTextPage("childish_spirit", "childish_spirit_a", MalumIntegration.SPIRIT_ITEM.get()))
                 .addPage(new TextPage("childish_spirit_b")));
         ProgressionBookScreen.entries.add((new BookEntry("buddycard_set", MalumIntegration.PACK.get(), -6, 1))
+                .setObjectSupplier(BuddycardsEntryObject::new)
                 .addPage(new HeadlineTextPage("buddycard_set", "buddycard_set"))
                 .addPage(SpiritInfusionPage.fromOutput(MalumIntegration.PACK.get())));
         ProgressionBookScreen.entries.add((new BookEntry("childish_rite", MalumIntegration.SPIRIT_ITEM.get(), -5, 0))
+                .setObjectSupplier(BuddycardsEntryObject::new)
                 .addPage(new DoubleHeadlineTextPage("rite_effect", "childish_rite"))
                 .addPage(new SpiritRitePage(MalumIntegration.RITE))
                 .addPage(new DoubleHeadlineTextPage("rite_effect", "eldritch_childish_rite"))

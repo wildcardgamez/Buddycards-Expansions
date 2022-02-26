@@ -202,6 +202,8 @@
   "item.buddycardsexp.buddycard_malum17.tooltip": "The world is revolving!",
   "item.buddycardsexp.buddycard_malum18": "Cyth",
   "item.buddycardsexp.buddycard_malum18.tooltip": "How many souls did you have to take to find me?",
+  "effect.buddycardsexp.childish_aura": "Childish Aura",
+  "effect.buddycardsexp.corrupted_childish_aura": "Corrupted Childish Aura",
   "malum.gui.book.entry.childish_ring": "Youthful Trinkets",
   "malum.gui.book.entry.childish_ring.description": "Killing Children",
   "malum.gui.book.entry.page.headline.childish_ring": "Childish Spoil",
@@ -219,6 +221,6 @@
   "malum.gui.book.entry.childish_rite.description": "RNG Manipulation",
   "malum.gui.book.entry.page.text.childish_rite": "The childish rite rovides one of many auras. Nearby players have better RNG for Malum Buddycard Packs.",
   "malum.gui.book.entry.page.text.corrupted_childish_rite": "The aura creates chaos inside Malum Buddycard Packs, RNG will be worsened but you will find an extra card inside.",
-  "malum.gui.book.entry.page.text.childish_eldritch_rite": "This powerful version of the childish rite will increase your RNG even more than the normal rite.",
+  "malum.gui.book.entry.page.text.eldritch_childish_rite": "This powerful version of the childish rite will increase your RNG even more than the normal rite.",
   "malum.gui.book.entry.page.text.corrupted_eldritch_childish_rite": "Your packs will now be completely devoid of good RNG, but five cards in each pack seems like a good deal."
 }

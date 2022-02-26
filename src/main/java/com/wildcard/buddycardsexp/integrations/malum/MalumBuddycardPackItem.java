@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Random;
 
-class MalumBuddycardPackItem extends BuddycardSetPackItem {
+public class MalumBuddycardPackItem extends BuddycardSetPackItem {
     double[][] rates = {{.6,.9,.975},{.5,.85,.95},{.45,.8,.925}};
 
     public MalumBuddycardPackItem() {
