@@ -11,18 +11,18 @@
       "item": "minecraft:leather"
     },
     {
-      "tag": "buddycardsexp:buddycards_malum"
+      "tag": "buddycardsexp:buddycards_farmers"
     },
     {
-      "tag": "buddycardsexp:buddycards_malum"
+      "tag": "buddycardsexp:buddycards_farmers"
     },
     {
-      "tag": "buddycardsexp:buddycards_malum"
+      "tag": "buddycardsexp:buddycards_farmers"
     }
   ],
   "result":
   {
-    "item": "buddycardsexp:buddycard_binder_malum",
+    "item": "buddycardsexp:buddycard_binder_farmers",
     "count": 1
   }
 }

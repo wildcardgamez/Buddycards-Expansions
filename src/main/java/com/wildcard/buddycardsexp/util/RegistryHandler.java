@@ -60,7 +60,7 @@ public class RegistryHandler {
     //Requirements
     public static final BuddycardsItems.BuddycardRequirement CREATE_REQUIREMENT = () -> ModList.get().isLoaded("create");
     public static final BuddycardsItems.BuddycardRequirement AQUACULTURE_REQUIREMENT = () -> ModList.get().isLoaded("aquaculture");
-    public static final BuddycardsItems.BuddycardRequirement FARMERS_REQUIREMENT = () -> ModList.get().isLoaded("farmers");
+    public static final BuddycardsItems.BuddycardRequirement FARMERS_REQUIREMENT = () -> ModList.get().isLoaded("farmersdelight");
     public static final BuddycardsItems.BuddycardRequirement MALUM_REQUIREMENT = () -> ModList.get().isLoaded("malum");
 
     //Card registration

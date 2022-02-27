@@ -26,7 +26,7 @@ import vectorwing.farmersdelight.common.registry.ModBlocks;
 public class FarmersDelightIntegration {
     public static void init() {
         BOOSTER_BOX = RegistryHandler.BLOCKS.register("buddycard_booster_box_farmers", () -> new BuddycardBoosterBoxBlock(RegistryHandler.FARMERS_REQUIREMENT, BuddycardsBlocks.BOOSTER_BOX_PROPERTIES));
-        PACK = RegistryHandler.ITEMS.register("buddycard_pack_farmers", () -> new BuddycardSetPackItem(RegistryHandler.FARMERS_REQUIREMENT, RegistryHandler.FARMERS_SET, 4, 1, BuddycardsItems.DEFAULT_RARITY_WEIGHTS, BuddycardsItems.DEFAULT_PACK_PROPERTIES));
+        PACK = RegistryHandler.ITEMS.register("buddycard_pack_farmers", FarmersBuddycardPackItem::new);
         BINDER = RegistryHandler.ITEMS.register("buddycard_binder_farmers", () -> new BuddycardBinderItem(RegistryHandler.FARMERS_REQUIREMENT, BuddycardsItems.DEFAULT_BINDER_PROPERTIES));
         MEDAL = RegistryHandler.ITEMS.register("buddysteel_medal_farmers", () -> new BuddysteelSetMedalItem(RegistryHandler.FARMERS_REQUIREMENT, ExtendedMedalTypes.FARMERS_SET, RegistryHandler.FARMERS_SET, BuddycardsItems.DEFAULT_MEDAL_PROPERTIES));
         BOOSTER_BOX_ITEM = RegistryHandler.ITEMS.register("buddycard_booster_box_farmers", () -> new BuddycardBoosterBoxItem(BOOSTER_BOX.get(), PACK, BuddycardsItems.DEFAULT_UNCOMMON_PROPERTIES));
