@@ -1,12 +1,8 @@
 package com.wildcard.buddycardsexp.integrations.farmersdelight;
 
-import com.wildcard.buddycards.item.BuddycardItem;
-import com.wildcard.buddycards.item.BuddycardPackItem;
 import com.wildcard.buddycards.item.BuddycardSetPackItem;
 import com.wildcard.buddycards.registries.BuddycardsItems;
-import com.wildcard.buddycards.savedata.BuddycardCollectionSaveData;
 import com.wildcard.buddycardsexp.util.RegistryHandler;
-import net.minecraft.core.NonNullList;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -17,7 +13,7 @@ import net.minecraftforge.items.ItemHandlerHelper;
 
 public class FarmersBuddycardPackItem extends BuddycardSetPackItem {
     public FarmersBuddycardPackItem() {
-        super(RegistryHandler.FARMERS_REQUIREMENT, RegistryHandler.FARMERS_SET, 3, 1, BuddycardsItems.DEFAULT_RARITY_WEIGHTS, BuddycardsItems.DEFAULT_PROPERTIES);
+        super(RegistryHandler.FARMERS_REQUIREMENT, RegistryHandler.FARMERS_SET, 3, 1, BuddycardsItems.DEFAULT_RARITY_WEIGHTS, BuddycardsItems.DEFAULT_PACK_PROPERTIES);
     }
 
     @Override
