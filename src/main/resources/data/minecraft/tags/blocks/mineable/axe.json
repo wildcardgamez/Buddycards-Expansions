@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "buddycardsexp:buddybean_crate"
+    {
+      "id": "buddycardsexp:buddybean_crate",
+      "required": false
+    }
   ]
 }
