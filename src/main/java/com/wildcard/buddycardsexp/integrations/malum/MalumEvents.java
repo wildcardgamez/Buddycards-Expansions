@@ -3,8 +3,10 @@ package com.wildcard.buddycardsexp.integrations.malum;
 import com.sammy.malum.client.screen.codex.BookEntry;
 import com.sammy.malum.client.screen.codex.ProgressionBookScreen;
 import com.sammy.malum.client.screen.codex.pages.*;
+import com.sammy.malum.common.events.SetupMalumCodexEntriesEvent;
+import com.sammy.malum.compability.tetra.TetraCompat;
 import com.sammy.malum.core.helper.SpiritHelper;
-import com.sammy.malum.core.setup.item.ItemTagRegistry;
+import com.sammy.malum.core.setup.content.item.ItemTagRegistry;
 import com.wildcard.buddycards.registries.BuddycardsItems;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.Monster;
@@ -22,7 +24,7 @@ public class MalumEvents {
     public void onEntityKill(LivingDeathEvent event) {
         if(event.getSource().getEntity() instanceof LivingEntity source && source.getAttributeValue(MalumIntegration.CHILDISH_SPOIL.get()) > 0) {
             ItemStack weapon = source.getMainHandItem();
-            if (ItemTagRegistry.SOUL_HUNTER_WEAPON.getValues().contains(weapon.getItem())) {
+            if (weapon.m_204117_(ItemTagRegistry.SOUL_HUNTER_WEAPON) || TetraCompat.LOADED && TetraCompat.LoadedOnly.hasSoulStrike(weapon)) {
                 if(event.getEntityLiving() instanceof Monster entity && entity.isBaby()) {
                     ArrayList<ItemStack> spirits = new ArrayList<>();
                     double childishSpoil = source.getAttributeValue(MalumIntegration.CHILDISH_SPOIL.get()) - entity.getRandom().nextFloat();
@@ -39,7 +41,7 @@ public class MalumEvents {
 
     @SubscribeEvent
     @OnlyIn(Dist.CLIENT)
-    public void setupCodex(ProgressionBookScreen.SetupMalumCodexEntriesEvent event) {
+    public void setupCodex(SetupMalumCodexEntriesEvent event) {
         ProgressionBookScreen.entries.add((new BookEntry("childish_ring", MalumIntegration.CHILDISH_RING.get(), -5, 2))
                 .setObjectSupplier(BuddycardsEntryObject::new)
                 .addPage(new HeadlineTextPage("childish_ring", "childish_ring"))

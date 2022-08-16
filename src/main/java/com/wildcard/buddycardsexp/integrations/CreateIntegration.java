@@ -18,7 +18,7 @@ public class CreateIntegration {
         BOOSTER_BOX = RegistryHandler.BLOCKS.register("buddycard_booster_box_create", () -> new BuddycardBoosterBoxBlock(RegistryHandler.CREATE_REQUIREMENT, BuddycardsBlocks.BOOSTER_BOX_PROPERTIES));
         PACK = RegistryHandler.ITEMS.register("buddycard_pack_create", () -> new BuddycardSetPackItem(RegistryHandler.CREATE_REQUIREMENT, RegistryHandler.CREATE_SET, 4, 1, BuddycardsItems.DEFAULT_RARITY_WEIGHTS, BuddycardsItems.DEFAULT_PACK_PROPERTIES));
         BINDER = RegistryHandler.ITEMS.register("buddycard_binder_create", () -> new BuddycardBinderItem(RegistryHandler.CREATE_REQUIREMENT, BuddycardsItems.DEFAULT_BINDER_PROPERTIES));
-        MEDAL = RegistryHandler.ITEMS.register("buddysteel_medal_create", () -> new BuddysteelSetMedalItem(RegistryHandler.CREATE_REQUIREMENT, ExtendedMedalTypes.CREATE_SET, RegistryHandler.CREATE_SET, BuddycardsItems.DEFAULT_MEDAL_PROPERTIES));
+        MEDAL = RegistryHandler.ITEMS.register("buddysteel_medal_create", () -> new BuddysteelSetMedalItem(RegistryHandler.CREATE_REQUIREMENT, ExtendedMedalTypes.CREATE_SET, RegistryHandler.CREATE_SET, BuddycardsItems.DEFAULT_CURIO_PROPERTIES));
         BOOSTER_BOX_ITEM = RegistryHandler.ITEMS.register("buddycard_booster_box_create", () -> new BuddycardBoosterBoxItem(BOOSTER_BOX.get(), PACK, BuddycardsItems.DEFAULT_UNCOMMON_PROPERTIES));
 
         RECYCLED_BUDDYCARD = RegistryHandler.ITEMS.register("recycled_buddycard", () -> new Item(new Item.Properties().tab(Buddycards.TAB)));

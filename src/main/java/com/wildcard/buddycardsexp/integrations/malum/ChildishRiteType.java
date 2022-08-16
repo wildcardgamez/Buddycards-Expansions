@@ -1,8 +1,8 @@
 package com.wildcard.buddycardsexp.integrations.malum;
 
 import com.sammy.malum.common.packets.particle.MagicParticlePacket;
-import com.sammy.malum.core.setup.PacketRegistry;
 import com.sammy.malum.core.setup.content.SpiritTypeRegistry;
+import com.sammy.malum.core.setup.server.PacketRegistry;
 import com.sammy.malum.core.systems.rites.MalumRiteType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;

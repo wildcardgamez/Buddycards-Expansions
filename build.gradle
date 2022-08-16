@@ -129,18 +129,19 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.18.1-39.0.79'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.68'
 
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.1-5.0.3.1")
-    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.1-5.0.3.1:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7.1")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7.1:api")
 
-    implementation fg.deobf("curse.maven:buddycards-425991:3665323")
-    implementation  fg.deobf("curse.maven:flywheel-486392:3568139")
-    implementation  fg.deobf("curse.maven:create-328085:3564692")
-    implementation  fg.deobf("curse.maven:aquaculture-60028:3569696")
-    implementation  fg.deobf("curse.maven:farmers_delight-398521:3615366")
-    implementation  fg.deobf("curse.maven:malum-484064:3649085")
-    implementation fg.deobf("curse.maven:jei-238222:3574041")
+    implementation fg.deobf("curse.maven:buddycards-425991:3911357")
+    implementation  fg.deobf("curse.maven:flywheel-486392:3934664")
+    implementation  fg.deobf("curse.maven:create-328085:3934676")
+    implementation  fg.deobf("curse.maven:aquaculture-60028:3844973")
+    implementation  fg.deobf("curse.maven:farmers_delight-398521:3834150")
+    implementation  fg.deobf("curse.maven:lodestonelib-616457:3768197")
+    implementation  fg.deobf("curse.maven:malum-484064:3838894")
+    implementation fg.deobf("curse.maven:jei-238222:3695636")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.

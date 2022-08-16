@@ -1,6 +1,5 @@
 package com.wildcard.buddycardsexp.util;
 
-import com.wildcard.buddycards.block.entity.CardDisplayBlockEntity;
 import com.wildcard.buddycards.core.BuddycardSet;
 import com.wildcard.buddycards.item.BuddycardItem;
 import com.wildcard.buddycards.registries.BuddycardsItems;
@@ -67,7 +66,8 @@ public class RegistryHandler {
     public static void registerCards(BuddycardSet set, int startValue, int amount, Rarity rarity, Item.Properties properties, BuddycardsItems.BuddycardRequirement requirement) {
         Objects.requireNonNull(set);
         for (int i = startValue; i < amount + startValue; i++) {
-            ITEMS.register("buddycard_" + set.getName() + i, new BuddycardItem(requirement, set, i, rarity, properties).delegate);
+            int finalI = i;
+            ITEMS.register("buddycard_" + set.getName() + finalI, () -> new BuddycardItem(requirement, set, finalI, rarity, properties));
         }
     }
 }

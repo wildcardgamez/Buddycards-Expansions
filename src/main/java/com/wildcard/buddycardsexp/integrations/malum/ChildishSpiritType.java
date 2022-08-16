@@ -1,6 +1,7 @@
 package com.wildcard.buddycardsexp.integrations.malum;
 
 import com.sammy.malum.common.block.totem.TotemPoleBlock;
+import com.sammy.malum.core.setup.content.SpiritTypeRegistry;
 import com.sammy.malum.core.systems.spirit.MalumSpiritType;
 import com.wildcard.buddycardsexp.BuddycardsExpansions;
 import net.minecraft.resources.ResourceLocation;
@@ -17,7 +18,7 @@ public class ChildishSpiritType extends MalumSpiritType {
     @Override
     public BlockState getBlockState(boolean isCorrupt, BlockHitResult hit) {
         Block base = !isCorrupt ? MalumIntegration.TOTEM.get() : MalumIntegration.CORRUPTED_TOTEM.get();
-        return base.defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, hit.getDirection()).setValue(TotemPoleBlock.SPIRIT_TYPE, 0);
+        return base.defaultBlockState().setValue(BlockStateProperties.HORIZONTAL_FACING, hit.getDirection()).setValue(SpiritTypeRegistry.SPIRIT_TYPE_PROPERTY, identifier);
     }
 
     @Override
