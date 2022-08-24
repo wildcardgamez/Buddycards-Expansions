@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
   "type": "malum:spirit_infusion",
   "input": {
     "item": "buddycardsexp:childish_ring",
@@ -20,7 +26,7 @@
   ],
   "spirits": [
     {
-      "item": "buddycardsexp:childish",
+      "type": "childish",
       "count": 8
     }
   ]

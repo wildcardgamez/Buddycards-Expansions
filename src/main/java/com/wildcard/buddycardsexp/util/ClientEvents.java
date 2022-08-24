@@ -29,10 +29,4 @@ public class ClientEvents {
         if(ModList.get().isLoaded("malum"))
             event.getItemColors().register((a, b) -> 10021119, MalumIntegration.SPIRIT_ITEM.get());
     }
-
-    @SubscribeEvent
-    public static void registerEntityRenders(EntityRenderersEvent.RegisterRenderers event) {
-        if(ModList.get().isLoaded("malum"))
-            event.registerBlockEntityRenderer(MalumIntegration.TOTEMS.get(), TotemPoleRenderer::new);
-    }
 }

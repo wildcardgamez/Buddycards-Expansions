@@ -1,7 +1,5 @@
 package com.wildcard.buddycardsexp.integrations.malum;
 
-import com.sammy.malum.common.block.totem.TotemPoleBlock;
-import com.sammy.malum.common.blockentity.totem.TotemPoleTileEntity;
 import com.sammy.malum.common.item.spirit.MalumSpiritItem;
 import com.sammy.malum.core.setup.content.SpiritRiteRegistry;
 import com.sammy.malum.core.setup.content.SpiritTypeRegistry;
@@ -9,10 +7,14 @@ import com.sammy.malum.core.setup.content.block.BlockRegistry;
 import com.sammy.malum.core.setup.content.item.tabs.MalumSplinterTab;
 import com.sammy.malum.core.systems.rites.MalumRiteType;
 import com.sammy.malum.core.systems.spirit.MalumSpiritType;
+import com.sammy.malum.core.systems.spirit.SpiritTypeProperty;
 import com.wildcard.buddycards.Buddycards;
 import com.wildcard.buddycards.block.BuddycardBoosterBoxBlock;
 import com.wildcard.buddycards.block.CardDisplayBlock;
-import com.wildcard.buddycards.item.*;
+import com.wildcard.buddycards.item.BuddycardBinderItem;
+import com.wildcard.buddycards.item.BuddycardBoosterBoxItem;
+import com.wildcard.buddycards.item.BuddycardPackItem;
+import com.wildcard.buddycards.item.BuddysteelSetMedalItem;
 import com.wildcard.buddycards.registries.BuddycardsBlocks;
 import com.wildcard.buddycards.registries.BuddycardsItems;
 import com.wildcard.buddycardsexp.util.ExtendedMedalTypes;
@@ -22,8 +24,6 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.awt.*;
@@ -48,12 +48,8 @@ public class MalumIntegration {
         RegistryHandler.ITEMS.register("soulwood_card_display", () -> new BlockItem(SOULWOOD_DISPLAY.get(), DEFAULT_PROPERTIES));
 
         SPIRIT_ITEM = RegistryHandler.ITEMS.register("childish_spirit", () -> new MalumSpiritItem(new Item.Properties().tab(MalumSplinterTab.INSTANCE), SPIRIT));
-        SPIRIT = new ChildishSpiritType();
-        SpiritTypeRegistry.SPIRITS.put("childish", SPIRIT);
-
-        TOTEM = RegistryHandler.BLOCKS.register("childish_totem_pole", () -> new TotemPoleBlock(BlockRegistry.RUNEWOOD_PROPERTIES().noOcclusion(), BlockRegistry.RUNEWOOD_LOG, false));
-        CORRUPTED_TOTEM = RegistryHandler.BLOCKS.register("corrupted_childish_totem_pole", () -> new TotemPoleBlock(BlockRegistry.SOULWOOD_PROPERTIES().noOcclusion(), BlockRegistry.SOULWOOD_LOG, true));
-        TOTEMS = RegistryHandler.BLOCK_ENTITIES.register("childish_totem_pole", () -> BlockEntityType.Builder.of((a, b) -> new TotemPoleTileEntity(TOTEMS.get(), a, b), TOTEM.get(), CORRUPTED_TOTEM.get()).build(null));
+        SPIRIT = SpiritTypeRegistry.create("childish", SPIRIT_COLOR, SPIRIT_ITEM);
+        SpiritTypeRegistry.SPIRIT_TYPE_PROPERTY = new SpiritTypeProperty("spirit_type", SpiritTypeRegistry.SPIRITS.values());
 
         CHILDISH_SPOIL = RegistryHandler.ATTRIBUTES.register("childish_spoils", () -> new RangedAttribute("attribute.name.buddycardsexp.childish_spoils", 0.0D, 0.0D, 2048.0D));
         CHILDISH_RING = RegistryHandler.ITEMS.register("childish_ring", () -> new ChildishSpoilRingItem(new Item.Properties().tab(Buddycards.TAB).stacksTo(1), 0.2));
@@ -81,10 +77,6 @@ public class MalumIntegration {
     public static RegistryObject<Attribute> CHILDISH_SPOIL;
     public static RegistryObject<Item> CHILDISH_RING;
     public static RegistryObject<Item> YOUTHFUL_RING;
-
-    public static RegistryObject<TotemPoleBlock> TOTEM;
-    public static RegistryObject<TotemPoleBlock> CORRUPTED_TOTEM;
-    public static RegistryObject<BlockEntityType<TotemPoleTileEntity>> TOTEMS;
 
     public static RegistryObject<MobEffect> AURA;
     public static RegistryObject<MobEffect> CORRUPTED_AURA;

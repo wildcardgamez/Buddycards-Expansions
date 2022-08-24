@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "malum"
+    }
+  ],
   "type": "malum:spirit_infusion",
   "input": {
     "item": "buddycardsexp:shredded_buddycard",
@@ -16,7 +22,7 @@
   ],
   "spirits": [
     {
-      "item": "buddycardsexp:childish",
+      "type": "childish",
       "count": 4
     }
   ]
