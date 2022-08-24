@@ -1,7 +1,13 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "create:copper_sheet"
+    "tag": "forge:plates/copper"
   },
   "transitionalItem": {
     "item": "buddycardsexp:unfinished_buddycard_pack"
