@@ -8,6 +8,7 @@ import com.sammy.malum.core.setup.content.item.tabs.MalumSplinterTab;
 import com.sammy.malum.core.systems.rites.MalumRiteType;
 import com.sammy.malum.core.systems.spirit.MalumSpiritType;
 import com.sammy.malum.core.systems.spirit.SpiritTypeProperty;
+import com.sammy.ortus.systems.block.OrtusBlockProperties;
 import com.wildcard.buddycards.Buddycards;
 import com.wildcard.buddycards.block.BuddycardBoosterBoxBlock;
 import com.wildcard.buddycards.block.CardDisplayBlock;
@@ -24,6 +25,9 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.awt.*;
@@ -38,8 +42,8 @@ public class MalumIntegration {
         MEDAL = RegistryHandler.ITEMS.register("buddysteel_medal_malum", () -> new BuddysteelSetMedalItem(RegistryHandler.MALUM_REQUIREMENT, ExtendedMedalTypes.MALUM_SET, RegistryHandler.MALUM_SET, BuddycardsItems.DEFAULT_CURIO_PROPERTIES));
         BOOSTER_BOX_ITEM = RegistryHandler.ITEMS.register("buddycard_booster_box_malum", () -> new BuddycardBoosterBoxItem(BOOSTER_BOX.get(), PACK, BuddycardsItems.DEFAULT_UNCOMMON_PROPERTIES));
 
-        RUNEWOOD_DISPLAY = RegistryHandler.BLOCKS.register("runewood_card_display", () -> new CardDisplayBlock(BlockRegistry.RUNEWOOD_PROPERTIES()));
-        SOULWOOD_DISPLAY = RegistryHandler.BLOCKS.register("soulwood_card_display", () -> new CardDisplayBlock(BlockRegistry.SOULWOOD_PROPERTIES()));
+        RUNEWOOD_DISPLAY = RegistryHandler.BLOCKS.register("runewood_card_display", () -> new CardDisplayBlock(new OrtusBlockProperties(Material.WOOD, MaterialColor.COLOR_YELLOW).needsAxe().sound(SoundType.WOOD).strength(1.75F, 4.0F)));
+        SOULWOOD_DISPLAY = RegistryHandler.BLOCKS.register("soulwood_card_display", () -> new CardDisplayBlock(new OrtusBlockProperties(Material.WOOD, MaterialColor.COLOR_PURPLE).needsAxe().sound(SoundType.WOOD).strength(1.75F, 4.0F)));
 
         BuddycardsBlocks.DISPLAY_BLOCKS.add(RUNEWOOD_DISPLAY);
         BuddycardsBlocks.DISPLAY_BLOCKS.add(SOULWOOD_DISPLAY);

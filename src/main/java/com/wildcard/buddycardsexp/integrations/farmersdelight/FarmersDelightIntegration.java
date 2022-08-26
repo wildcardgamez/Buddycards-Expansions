@@ -17,7 +17,9 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.block.PieBlock;
@@ -33,7 +35,7 @@ public class FarmersDelightIntegration {
 
         BUDDYBEANS = RegistryHandler.BLOCKS.register("buddybeans", () -> new CropBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES)));
         BUDDYBEANS_ITEM = RegistryHandler.ITEMS.register("buddybeans", () ->  new BlockItem(BUDDYBEANS.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2F).build()).tab(Buddycards.TAB)));
-        BUDDYBEAN_CRATE = RegistryHandler.BLOCKS.register("buddybean_crate", () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CABBAGE_CRATE.get())));
+        BUDDYBEAN_CRATE = RegistryHandler.BLOCKS.register("buddybean_crate", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
         BUDDYBEAN_CRATE_ITEM = RegistryHandler.ITEMS.register("buddybean_crate", () ->  new BlockItem(BUDDYBEAN_CRATE.get(), new Item.Properties().tab(Buddycards.TAB)));
         DICED_BUDDYBEANS = RegistryHandler.ITEMS.register("diced_buddybeans", () -> new Item(new Item.Properties().tab(Buddycards.TAB).craftRemainder(Items.BOWL)));
         BUDDYBEAN_PASTE = RegistryHandler.ITEMS.register("buddybean_paste", () -> new Item(new Item.Properties().tab(Buddycards.TAB)));
