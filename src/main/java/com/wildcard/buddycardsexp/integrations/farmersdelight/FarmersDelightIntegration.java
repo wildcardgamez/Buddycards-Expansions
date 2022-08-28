@@ -37,8 +37,8 @@ public class FarmersDelightIntegration {
         BUDDYBEANS_ITEM = RegistryHandler.ITEMS.register("buddybeans", () ->  new BlockItem(BUDDYBEANS.get(), new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2F).build()).tab(Buddycards.TAB)));
         BUDDYBEAN_CRATE = RegistryHandler.BLOCKS.register("buddybean_crate", () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
         BUDDYBEAN_CRATE_ITEM = RegistryHandler.ITEMS.register("buddybean_crate", () ->  new BlockItem(BUDDYBEAN_CRATE.get(), new Item.Properties().tab(Buddycards.TAB)));
-        DICED_BUDDYBEANS = RegistryHandler.ITEMS.register("diced_buddybeans", () -> new Item(new Item.Properties().tab(Buddycards.TAB).craftRemainder(Items.BOWL)));
-        BUDDYBEAN_PASTE = RegistryHandler.ITEMS.register("buddybean_paste", () -> new Item(new Item.Properties().tab(Buddycards.TAB)));
+        DICED_BUDDYBEANS = RegistryHandler.ITEMS.register("diced_buddybeans", () -> new Item(new Item.Properties().tab(Buddycards.TAB)));
+        BUDDYBEAN_PASTE = RegistryHandler.ITEMS.register("buddybean_paste", () -> new Item(new Item.Properties().tab(Buddycards.TAB).craftRemainder(Items.BOWL)));
         BUDDYGUMMIES = RegistryHandler.ITEMS.register("buddygummies", () -> new Item(new Item.Properties().tab(Buddycards.TAB).food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2F).fast().build())));
         BUDDYBEAN_PIE_SLICE = RegistryHandler.ITEMS.register("buddybean_pie_slice", () -> new Item((new Item.Properties()).food(new FoodProperties.Builder().nutrition(3).saturationMod(0.5F).fast().effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F).build()).tab(Buddycards.TAB)));
         BUDDYCOOKIE = RegistryHandler.ITEMS.register("buddycookie", () ->  new Item((new Item.Properties()).food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()).tab(Buddycards.TAB)));
