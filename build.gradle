@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.18.1-1.1.4'
+version = '1.18.1-1.1.5'
 group = 'com.wildcardgamez.buddycardsexp' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'BuddycardsExpansions'
 
@@ -140,7 +140,7 @@ dependencies {
     implementation  fg.deobf("curse.maven:aquaculture-60028:3844973")
     implementation  fg.deobf("curse.maven:farmers_delight-398521:3834150")
     implementation  fg.deobf("curse.maven:lodestone-616457:3986845")
-    implementation  fg.deobf("curse.maven:malum-484064:3986844")
+    implementation  fg.deobf("curse.maven:malum-484064:4368497")
     implementation fg.deobf("curse.maven:jei-238222:3695636")
 }
 

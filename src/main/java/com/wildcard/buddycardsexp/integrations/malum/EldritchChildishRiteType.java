@@ -1,6 +1,6 @@
 package com.wildcard.buddycardsexp.integrations.malum;
 
-import com.sammy.malum.core.setup.content.SpiritTypeRegistry;
+import com.sammy.malum.registry.common.SpiritTypeRegistry;
 import com.sammy.malum.core.systems.rites.AuraRiteEffect;
 import com.sammy.malum.core.systems.rites.MalumRiteEffect;
 import com.sammy.malum.core.systems.rites.MalumRiteType;
