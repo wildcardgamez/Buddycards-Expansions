@@ -1,7 +1,6 @@
 package com.wildcard.buddycardsexp.integrations.malum;
 
 import com.wildcard.buddycards.item.BuddycardItem;
-import com.wildcard.buddycards.item.BuddycardPackItem;
 import com.wildcard.buddycards.item.BuddycardSetPackItem;
 import com.wildcard.buddycards.registries.BuddycardsItems;
 import com.wildcard.buddycards.savedata.BuddycardCollectionSaveData;
@@ -16,7 +15,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.items.ItemHandlerHelper;
 
-import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Random;
 
