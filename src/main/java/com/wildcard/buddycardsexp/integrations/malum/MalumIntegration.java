@@ -38,7 +38,7 @@ public class MalumIntegration {
     public static void init() {
         BOOSTER_BOX = RegistryHandler.BLOCKS.register("buddycard_booster_box_malum", () -> new BuddycardBoosterBoxBlock(RegistryHandler.MALUM_REQUIREMENT, BuddycardsBlocks.BOOSTER_BOX_PROPERTIES));
         PACK = RegistryHandler.ITEMS.register("buddycard_pack_malum", MalumBuddycardPackItem::new);
-        BINDER = RegistryHandler.ITEMS.register("buddycard_binder_malum", () -> new BuddycardBinderItem(RegistryHandler.MALUM_REQUIREMENT, BuddycardsItems.DEFAULT_BINDER_PROPERTIES));
+        BINDER = RegistryHandler.ITEMS.register("buddycard_binder_malum", () -> new BuddycardBinderItem(RegistryHandler.MALUM_REQUIREMENT, BuddycardsItems.DEFAULT_BINDER_PROPERTIES, RegistryHandler.MALUM_SET));
         MEDAL = RegistryHandler.ITEMS.register("buddysteel_medal_malum", () -> new BuddysteelSetMedalItem(RegistryHandler.MALUM_REQUIREMENT, ExtendedMedalTypes.MALUM_SET, RegistryHandler.MALUM_SET, BuddycardsItems.DEFAULT_CURIO_PROPERTIES));
         BOOSTER_BOX_ITEM = RegistryHandler.ITEMS.register("buddycard_booster_box_malum", () -> new BuddycardBoosterBoxItem(BOOSTER_BOX.get(), PACK, BuddycardsItems.DEFAULT_UNCOMMON_PROPERTIES));
 
