@@ -2,7 +2,7 @@ package com.wildcard.buddycardsexp.integrations.malum;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
-import com.sammy.malum.common.item.equipment.curios.MalumCurioItem;
+import com.sammy.malum.common.item.curiosities.curios.MalumCurioItem;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.ItemStack;

@@ -1,6 +1,7 @@
 package com.wildcard.buddycardsexp.integrations.malum;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.sammy.malum.client.screen.codex.ArcanaCodexHelper;
 import com.sammy.malum.client.screen.codex.BookEntry;
 import com.sammy.malum.client.screen.codex.ProgressionBookScreen;
 import com.sammy.malum.client.screen.codex.objects.EntryObject;
@@ -19,8 +20,8 @@ public class BuddycardsEntryObject extends EntryObject {
     public void render(Minecraft minecraft, PoseStack poseStack, float xOffset, float yOffset, int mouseX, int mouseY, float partialTicks) {
         int posX = this.offsetPosX(xOffset);
         int posY = this.offsetPosY(yOffset);
-        ProgressionBookScreen.renderTexture(BUDDYCARDS_FRAME_TEXTURE, poseStack, posX, posY, 0, 0, this.width, this.height,32, 32);
-        ProgressionBookScreen.renderTexture(ProgressionBookScreen.FRAME_TEXTURE, poseStack, posX, posY, 100.0F, (float)this.getBackgroundTextureV(), this.width, this.height, 512, 512);
+        ArcanaCodexHelper.renderTexture(BUDDYCARDS_FRAME_TEXTURE, poseStack, posX, posY, 0, 0, this.width, this.height,32, 32);
+        ArcanaCodexHelper.renderTexture(ProgressionBookScreen.FRAME_TEXTURE, poseStack, posX, posY, 100.0F, (float)this.getBackgroundTextureV(), this.width, this.height, 512, 512);
         minecraft.getItemRenderer().renderAndDecorateItem(this.entry.iconStack, posX + 8, posY + 8);
     }
 }

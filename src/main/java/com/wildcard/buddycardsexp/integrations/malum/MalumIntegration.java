@@ -1,12 +1,13 @@
 package com.wildcard.buddycardsexp.integrations.malum;
 
-import com.sammy.malum.common.item.spirit.MalumSpiritItem;
-import com.sammy.malum.registry.common.SpiritRiteRegistry;
-import com.sammy.malum.registry.common.SpiritTypeRegistry;
-import com.sammy.malum.registry.common.item.tabs.MalumCreativeTab;
+import com.sammy.malum.common.block.mana_mote.SpiritMoteBlock;
+import com.sammy.malum.common.item.spirit.SpiritShardItem;
 import com.sammy.malum.core.systems.rites.MalumRiteType;
 import com.sammy.malum.core.systems.spirit.MalumSpiritType;
 import com.sammy.malum.core.systems.spirit.SpiritTypeProperty;
+import com.sammy.malum.registry.common.SpiritRiteRegistry;
+import com.sammy.malum.registry.common.SpiritTypeRegistry;
+import com.sammy.malum.registry.common.block.MalumBlockProperties;
 import com.wildcard.buddycards.Buddycards;
 import com.wildcard.buddycards.block.BuddycardBoosterBoxBlock;
 import com.wildcard.buddycards.block.CardDisplayBlock;
@@ -50,8 +51,9 @@ public class MalumIntegration {
         RegistryHandler.ITEMS.register("runewood_card_display", () -> new BlockItem(RUNEWOOD_DISPLAY.get(), DEFAULT_PROPERTIES));
         RegistryHandler.ITEMS.register("soulwood_card_display", () -> new BlockItem(SOULWOOD_DISPLAY.get(), DEFAULT_PROPERTIES));
 
-        SPIRIT_ITEM = RegistryHandler.ITEMS.register("childish_spirit", () -> new MalumSpiritItem(new Item.Properties().tab(MalumCreativeTab.INSTANCE), SPIRIT));
-        SPIRIT = SpiritTypeRegistry.create("childish", SPIRIT_COLOR, SPIRIT_ITEM);
+        SPIRIT_ITEM = RegistryHandler.ITEMS.register("childish_spirit", () -> new SpiritShardItem(new Item.Properties().tab(Buddycards.TAB), SPIRIT));
+        SPIRIT_MOTE = RegistryHandler.BLOCKS.register("mote_of_childish_arcana", () -> new SpiritMoteBlock(MalumBlockProperties.MANA_MOTE_BLOCK(), SPIRIT));
+        SPIRIT = SpiritTypeRegistry.create("childish", SPIRIT_COLOR, SPIRIT_ITEM, SPIRIT_MOTE);
         SpiritTypeRegistry.SPIRIT_TYPE_PROPERTY = new SpiritTypeProperty("spirit_type", SpiritTypeRegistry.SPIRITS.values());
 
         CHILDISH_SPOIL = RegistryHandler.ATTRIBUTES.register("childish_spoils", () -> new RangedAttribute("attribute.name.buddycardsexp.childish_spoils", 0.0D, 0.0D, 2048.0D));
@@ -75,7 +77,8 @@ public class MalumIntegration {
 
     public static final Color SPIRIT_COLOR = new Color(152, 232, 255);
     public static MalumSpiritType SPIRIT;
-    public static RegistryObject<Item> SPIRIT_ITEM;
+    public static RegistryObject<SpiritShardItem> SPIRIT_ITEM;
+    public static RegistryObject<SpiritMoteBlock> SPIRIT_MOTE;
 
     public static RegistryObject<Attribute> CHILDISH_SPOIL;
     public static RegistryObject<Item> CHILDISH_RING;

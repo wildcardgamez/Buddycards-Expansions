@@ -1,6 +1,6 @@
 package com.wildcard.buddycardsexp.integrations;
 
-import com.simibubi.create.content.contraptions.itemAssembly.SequencedAssemblyItem;
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.wildcard.buddycards.Buddycards;
 import com.wildcard.buddycards.block.BuddycardBoosterBoxBlock;
 import com.wildcard.buddycards.item.*;
@@ -9,8 +9,6 @@ import com.wildcard.buddycards.registries.BuddycardsItems;
 import com.wildcard.buddycardsexp.util.ExtendedMedalTypes;
 import com.wildcard.buddycardsexp.util.RegistryHandler;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.RegistryObject;
 
 public class CreateIntegration {

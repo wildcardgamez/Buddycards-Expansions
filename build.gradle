@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.18.1-1.1.5'
+version = '1.18.2-1.1.5'
 group = 'com.wildcardgamez.buddycardsexp' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'BuddycardsExpansions'
 
@@ -129,18 +129,17 @@ dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.80'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.2.4'
 
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7.1")
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7.1:api")
 
-    implementation fg.deobf("curse.maven:buddycards-425991:3911357")
-    implementation  fg.deobf("curse.maven:flywheel-486392:3934664")
-    implementation  fg.deobf("curse.maven:create-328085:3934676")
-    implementation  fg.deobf("curse.maven:aquaculture-60028:3844973")
-    implementation  fg.deobf("curse.maven:farmers_delight-398521:3834150")
-    implementation  fg.deobf("curse.maven:lodestone-616457:3986845")
-    implementation  fg.deobf("curse.maven:malum-484064:4368497")
+    implementation fg.deobf("curse.maven:buddycards-425991:5458714")
+    implementation fg.deobf("curse.maven:create-328085:4835188")
+    implementation fg.deobf("curse.maven:aquaculture-60028:4501726")
+    implementation fg.deobf("curse.maven:farmers_delight-398521:4679315")
+    implementation fg.deobf("curse.maven:lodestone-616457:4631609")
+    implementation fg.deobf("curse.maven:malum-484064:4631612")
     implementation fg.deobf("curse.maven:jei-238222:3695636")
 }
 
