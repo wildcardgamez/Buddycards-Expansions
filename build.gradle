@@ -134,7 +134,7 @@ dependencies {
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7.1")
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7.1:api")
 
-    implementation fg.deobf("curse.maven:buddycards-425991:5458714")
+    implementation fg.deobf("curse.maven:buddycards-425991:5463998")
     implementation fg.deobf("curse.maven:create-328085:4835188")
     implementation fg.deobf("curse.maven:aquaculture-60028:4501726")
     implementation fg.deobf("curse.maven:farmers_delight-398521:4679315")

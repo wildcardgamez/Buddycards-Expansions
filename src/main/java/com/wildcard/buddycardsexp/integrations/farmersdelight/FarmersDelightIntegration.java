@@ -29,7 +29,7 @@ public class FarmersDelightIntegration {
     public static void init() {
         BOOSTER_BOX = RegistryHandler.BLOCKS.register("buddycard_booster_box_farmers", () -> new BuddycardBoosterBoxBlock(RegistryHandler.FARMERS_REQUIREMENT, BuddycardsBlocks.BOOSTER_BOX_PROPERTIES));
         PACK = RegistryHandler.ITEMS.register("buddycard_pack_farmers", FarmersBuddycardPackItem::new);
-        BINDER = RegistryHandler.ITEMS.register("buddycard_binder_farmers", () -> new BuddycardBinderItem(RegistryHandler.FARMERS_REQUIREMENT, BuddycardsItems.DEFAULT_BINDER_PROPERTIES));
+        BINDER = RegistryHandler.ITEMS.register("buddycard_binder_farmers", () -> new BuddycardBinderItem(RegistryHandler.FARMERS_REQUIREMENT, BuddycardsItems.DEFAULT_BINDER_PROPERTIES, RegistryHandler.FARMERS_SET));
         MEDAL = RegistryHandler.ITEMS.register("buddysteel_medal_farmers", () -> new BuddysteelSetMedalItem(RegistryHandler.FARMERS_REQUIREMENT, ExtendedMedalTypes.FARMERS_SET, RegistryHandler.FARMERS_SET, BuddycardsItems.DEFAULT_CURIO_PROPERTIES));
         BOOSTER_BOX_ITEM = RegistryHandler.ITEMS.register("buddycard_booster_box_farmers", () -> new BuddycardBoosterBoxItem(BOOSTER_BOX.get(), PACK, BuddycardsItems.DEFAULT_UNCOMMON_PROPERTIES));
 
